@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="100%" stop-color="#c3cfe2" />
+    </linearGradient>
+    <linearGradient id="chart-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#9b59b6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" rx="20" ry="20" fill="url(#bg-gradient)" />
+  
+  <!-- Dashboard Frame -->
+  <rect x="50" y="50" width="700" height="500" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" />
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="10" ry="10" fill="#2c3e50" />
+  <text x="100" y="85" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">CleanEngine 대시보드</text>
+  
+  <!-- Sidebar -->
+  <rect x="50" y="110" width="150" height="440" fill="#f8f9fa" />
+  <rect x="70" y="140" width="110" height="40" rx="5" ry="5" fill="#3498db" />
+  <text x="125" y="165" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffffff">대시보드</text>
+  
+  <rect x="70" y="190" width="110" height="40" rx="5" ry="5" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="125" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">거래소</text>
+  
+  <rect x="70" y="240" width="110" height="40" rx="5" ry="5" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="125" y="265" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">포트폴리오</text>
+  
+  <rect x="70" y="290" width="110" height="40" rx="5" ry="5" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="125" y="315" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333333">분석</text>
+  
+  <!-- Main Content -->
+  <text x="250" y="140" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">암호화폐 시장 개요</text>
+  
+  <!-- Chart -->
+  <rect x="220" y="170" width="500" height="200" rx="5" ry="5" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Chart Title -->
+  <text x="240" y="195" font-family="Arial, sans-serif" font-size="16" fill="#333333">비트코인 (BTC) 가격 추이</text>
+  
+  <!-- Chart Lines -->
+  <polyline points="240,320 290,280 340,300 390,260 440,240 490,270 540,220 590,230 640,200 690,180" 
+            fill="none" stroke="url(#chart-gradient)" stroke-width="3" />
+  
+  <!-- Chart Points -->
+  <circle cx="240" cy="320" r="4" fill="#3498db" />
+  <circle cx="290" cy="280" r="4" fill="#3498db" />
+  <circle cx="340" cy="300" r="4" fill="#3498db" />
+  <circle cx="390" cy="260" r="4" fill="#3498db" />
+  <circle cx="440" cy="240" r="4" fill="#3498db" />
+  <circle cx="490" cy="270" r="4" fill="#3498db" />
+  <circle cx="540" cy="220" r="4" fill="#3498db" />
+  <circle cx="590" cy="230" r="4" fill="#3498db" />
+  <circle cx="640" cy="200" r="4" fill="#3498db" />
+  <circle cx="690" cy="180" r="4" fill="#3498db" />
+  
+  <!-- Portfolio Cards -->
+  <rect x="220" y="390" width="240" height="140" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" />
+  <text x="240" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">내 포트폴리오</text>
+  <text x="240" y="450" font-family="Arial, sans-serif" font-size="14" fill="#333333">총 자산: ₩15,750,000</text>
+  <text x="240" y="480" font-family="Arial, sans-serif" font-size="14" fill="#333333">수익률: +12.4%</text>
+  <rect x="240" y="490" width="200" height="20" rx="5" ry="5" fill="#f8f9fa" />
+  <rect x="240" y="490" width="124" height="20" rx="5" ry="5" fill="#2ecc71" />
+  
+  <rect x="480" y="390" width="240" height="140" rx="10" ry="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" />
+  <text x="500" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">시장 동향</text>
+  <text x="500" y="450" font-family="Arial, sans-serif" font-size="14" fill="#333333">BTC: ₩38,500,000 (+2.3%)</text>
+  <text x="500" y="480" font-family="Arial, sans-serif" font-size="14" fill="#333333">ETH: ₩2,450,000 (+1.7%)</text>
+  <text x="500" y="510" font-family="Arial, sans-serif" font-size="14" fill="#333333">XRP: ₩550 (-0.5%)</text>
+</svg>

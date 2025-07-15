@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="100%" stop-color="#c3cfe2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" rx="20" ry="20" fill="url(#bg-gradient)" />
+  
+  <!-- Team Members -->
+  <g transform="translate(100, 80)">
+    <!-- Person 1 -->
+    <circle cx="80" cy="80" r="60" fill="#3498db" />
+    <circle cx="80" cy="60" r="25" fill="#ffffff" />
+    <path d="M40,110 C40,80 120,80 120,110 L120,140 L40,140 Z" fill="#ffffff" />
+    <text x="80" y="180" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2c3e50">개발자</text>
+    
+    <!-- Person 2 -->
+    <circle cx="240" cy="80" r="60" fill="#2c3e50" />
+    <circle cx="240" cy="60" r="25" fill="#ffffff" />
+    <path d="M200,110 C200,80 280,80 280,110 L280,140 L200,140 Z" fill="#ffffff" />
+    <text x="240" y="180" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2c3e50">디자이너</text>
+    
+    <!-- Person 3 -->
+    <circle cx="400" cy="80" r="60" fill="#f39c12" />
+    <circle cx="400" cy="60" r="25" fill="#ffffff" />
+    <path d="M360,110 C360,80 440,80 440,110 L440,140 L360,140 Z" fill="#ffffff" />
+    <text x="400" y="180" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2c3e50">기획자</text>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="300" y="300" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">CleanEngine 팀</text>
+  
+  <!-- Tagline -->
+  <text x="300" y="330" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2c3e50">안전하고 편리한 암호화폐 모의투자 플랫폼을 만들어갑니다</text>
+</svg>
