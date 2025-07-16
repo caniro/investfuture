@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-language="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CleanEngine - 암호화폐 모의투자 거래소</title>
+    <title>InvestFuture - 암호화폐 모의투자 거래소</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="assets/logo.svg" alt="CleanEngine Logo">
-                <h1>CleanEngine</h1>
+                <img src="assets/logo.svg" alt="InvestFuture Logo">
+                <h1>InvestFuture</h1>
             </div>
             <button class="mobile-menu-button">
                 <span></span>
@@ -23,66 +23,65 @@
             </button>
             <nav>
                 <ul>
-                    <li><a href="#features">주요 기능</a></li>
-                    <li><a href="#how-it-works">이용 방법</a></li>
-                    <li><a href="#about">서비스 소개</a></li>
-                    <li><a href="#contact">문의하기</a></li>
+                    <li><a href="#features" data-lang-ko="주요 기능" data-lang-en="Features">주요 기능</a></li>
+                    <li><a href="#how-it-works" data-lang-ko="이용 방법" data-lang-en="How It Works">이용 방법</a></li>
+                    <li><a href="#about" data-lang-ko="서비스 소개" data-lang-en="About">서비스 소개</a></li>
                 </ul>
             </nav>
             <div class="cta-buttons">
                 <a href="https://github.com/CleanEngine/cleanengine-be" class="btn btn-secondary" target="_blank">GitHub</a>
-                <a href="#" class="btn btn-primary">시작하기</a>
+                <a href="#" class="btn btn-primary" data-lang-ko="시작하기" data-lang-en="Get Started">시작하기</a>
             </div>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>안전하고 편리한<br>암호화폐 모의투자 플랫폼</h1>
-                <p>실제 시장 데이터를 기반으로 리스크 없이 암호화폐 투자를 연습해보세요.</p>
+                <h1 data-lang-ko="안전하고 편리한<br>암호화폐 모의투자 플랫폼" data-lang-en="Safe and Convenient<br>Cryptocurrency Mock Investment Platform">안전하고 편리한<br>암호화폐 모의투자 플랫폼</h1>
+                <p data-lang-ko="실제 시장 데이터를 기반으로 리스크 없이 암호화폐 투자를 연습해보세요. 24시간 언제든지 이용 가능합니다." data-lang-en="Practice cryptocurrency investment without risk based on real market data. Available 24/7.">실제 시장 데이터를 기반으로 리스크 없이 암호화폐 투자를 연습해보세요. 24시간 언제든지 이용 가능합니다.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">무료로 시작하기</a>
-                    <a href="#features" class="btn btn-secondary">자세히 알아보기</a>
+                    <a href="#" class="btn btn-primary" data-lang-ko="무료로 시작하기" data-lang-en="Start for Free">무료로 시작하기</a>
+                    <a href="#features" class="btn btn-secondary" data-lang-ko="자세히 알아보기" data-lang-en="Learn More">자세히 알아보기</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/hero-image.svg" alt="CleanEngine Platform Preview">
+                <img src="assets/hero-image.svg" alt="InvestFuture Platform Preview">
             </div>
         </div>
     </section>
 
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">주요 기능</h2>
+            <h2 class="section-title" data-lang-ko="주요 기능" data-lang-en="Key Features">주요 기능</h2>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" id="feature-realtime">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>실시간 시장 데이터</h3>
-                    <p>실제 암호화폐 시장의 실시간 데이터를 기반으로 모의투자를 진행합니다.</p>
+                    <h3 data-lang-ko="실시간 시장 데이터" data-lang-en="Real-time Market Data">실시간 시장 데이터</h3>
+                    <p data-lang-ko="실제 암호화폐 시장의 실시간 데이터를 기반으로 모의투자를 진행합니다." data-lang-en="Conduct mock investments based on real-time data from the cryptocurrency market.">실제 암호화폐 시장의 실시간 데이터를 기반으로 모의투자를 진행합니다.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-asset">
                     <div class="feature-icon">
                         <i class="fas fa-wallet"></i>
                     </div>
-                    <h3>가상 자산 관리</h3>
-                    <p>가상 자산을 안전하게 관리하고 포트폴리오를 구성해 보세요.</p>
+                    <h3 data-lang-ko="가상 자산 관리" data-lang-en="Virtual Asset Management">가상 자산 관리</h3>
+                    <p data-lang-ko="가상 자산을 안전하게 관리하고 포트폴리오를 구성해 보세요." data-lang-en="Safely manage virtual assets and build your portfolio.">가상 자산을 안전하게 관리하고 포트폴리오를 구성해 보세요.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-options">
                     <div class="feature-icon">
                         <i class="fas fa-exchange-alt"></i>
                     </div>
-                    <h3>다양한 거래 옵션</h3>
-                    <p>시장가, 지정가 등 다양한 주문 유형을 지원합니다.</p>
+                    <h3 data-lang-ko="다양한 거래 옵션" data-lang-en="Various Trading Options">다양한 거래 옵션</h3>
+                    <p data-lang-ko="시장가, 지정가 등 다양한 주문 유형을 지원합니다." data-lang-en="Supports various order types including market and limit orders.">시장가, 지정가 등 다양한 주문 유형을 지원합니다.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" id="feature-safety">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>안전한 환경</h3>
-                    <p>실제 자산 손실 없이 투자 전략을 테스트할 수 있습니다.</p>
+                    <h3 data-lang-ko="안전한 환경" data-lang-en="Safe Environment">안전한 환경</h3>
+                    <p data-lang-ko="실제 자산 손실 없이 투자 전략을 테스트할 수 있습니다." data-lang-en="Test investment strategies without risking real assets.">실제 자산 손실 없이 투자 전략을 테스트할 수 있습니다.</p>
                 </div>
             </div>
         </div>
@@ -90,27 +89,27 @@
 
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2 class="section-title">이용 방법</h2>
+            <h2 class="section-title" data-lang-ko="이용 방법" data-lang-en="How It Works">이용 방법</h2>
             <div class="steps">
-                <div class="step">
+                <div class="step" id="step-oauth">
                     <div class="step-number">1</div>
-                    <h3>회원가입</h3>
-                    <p>간단한 정보로 무료 계정을 만들어보세요.</p>
+                    <h3 data-lang-ko="계정 연동" data-lang-en="Account Connection">계정 연동</h3>
+                    <p data-lang-ko="기존 소셜 계정으로 간편하게 로그인하세요." data-lang-en="Sign in easily with your existing social account.">기존 소셜 계정으로 간편하게 로그인하세요.</p>
                 </div>
-                <div class="step">
+                <div class="step" id="step-assets">
                     <div class="step-number">2</div>
-                    <h3>가상 자산 받기</h3>
-                    <p>가입 시 가상 자산을 지급받습니다.</p>
+                    <h3 data-lang-ko="가상 자산 받기" data-lang-en="Get Virtual Assets">가상 자산 받기</h3>
+                    <p data-lang-ko="로그인 시 가상 자산을 지급받습니다." data-lang-en="Receive virtual assets when you log in.">로그인 시 가상 자산을 지급받습니다.</p>
                 </div>
-                <div class="step">
+                <div class="step" id="step-trading">
                     <div class="step-number">3</div>
-                    <h3>거래 시작</h3>
-                    <p>다양한 암호화폐를 거래하며 투자 전략을 테스트해보세요.</p>
+                    <h3 data-lang-ko="거래 시작" data-lang-en="Start Trading">거래 시작</h3>
+                    <p data-lang-ko="다양한 암호화폐를 거래하며 투자 전략을 테스트해보세요." data-lang-en="Test your investment strategies by trading various cryptocurrencies.">다양한 암호화폐를 거래하며 투자 전략을 테스트해보세요.</p>
                 </div>
-                <div class="step">
+                <div class="step" id="step-analysis">
                     <div class="step-number">4</div>
-                    <h3>성과 분석</h3>
-                    <p>투자 결과를 분석하고 전략을 개선해보세요.</p>
+                    <h3 data-lang-ko="성과 분석" data-lang-en="Performance Analysis">성과 분석</h3>
+                    <p data-lang-ko="투자 결과를 분석하고 전략을 개선해보세요." data-lang-en="Analyze your investment results and improve your strategies.">투자 결과를 분석하고 전략을 개선해보세요.</p>
                 </div>
             </div>
         </div>
@@ -119,81 +118,48 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <h2 class="section-title">서비스 소개</h2>
-                <p>CleanEngine은 암호화폐 투자에 관심이 있지만 실제 자산 손실 위험 없이 연습하고 싶은 분들을 위한 모의투자 플랫폼입니다. 실시간 시장 데이터를 기반으로 실제와 동일한 거래 경험을 제공하며, 다양한 투자 전략을 테스트할 수 있습니다.</p>
-                <p>초보자부터 전문가까지 모두가 쉽게 사용할 수 있도록 직관적인 인터페이스를 제공하며, 투자 결과를 분석할 수 있는 다양한 도구를 제공합니다.</p>
+                <h2 class="section-title" data-lang-ko="서비스 소개" data-lang-en="About the Service">서비스 소개</h2>
+                <p data-lang-ko="InvestFuture는 암호화폐 투자에 관심이 있지만 실제 자산 손실 위험 없이 연습하고 싶은 분들을 위한 모의투자 플랫폼입니다. 실시간 시장 데이터를 기반으로 실제와 동일한 거래 경험을 제공하며, 다양한 투자 전략을 테스트할 수 있습니다. 24시간 365일 언제든지 이용 가능합니다." data-lang-en="InvestFuture is a mock investment platform for those interested in cryptocurrency investment but want to practice without the risk of real asset loss. It provides a trading experience identical to the real one based on real-time market data, allowing you to test various investment strategies. Available 24/7, 365 days a year.">InvestFuture는 암호화폐 투자에 관심이 있지만 실제 자산 손실 위험 없이 연습하고 싶은 분들을 위한 모의투자 플랫폼입니다. 실시간 시장 데이터를 기반으로 실제와 동일한 거래 경험을 제공하며, 다양한 투자 전략을 테스트할 수 있습니다. 24시간 365일 언제든지 이용 가능합니다.</p>
+                <p data-lang-ko="초보자부터 전문가까지 모두가 쉽게 사용할 수 있도록 직관적인 인터페이스를 제공하며, 투자 결과를 분석할 수 있는 다양한 도구를 제공합니다." data-lang-en="It provides an intuitive interface that everyone from beginners to experts can easily use, as well as various tools to analyze investment results.">초보자부터 전문가까지 모두가 쉽게 사용할 수 있도록 직관적인 인터페이스를 제공하며, 투자 결과를 분석할 수 있는 다양한 도구를 제공합니다.</p>
             </div>
             <div class="about-image">
-                <img src="assets/about-image.svg" alt="CleanEngine Team">
+                <img src="assets/about-image.svg" alt="InvestFuture Platform">
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">문의하기</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>궁금한 점이 있으신가요?</h3>
-                    <p>아래 연락처로 문의하시거나 GitHub 저장소를 방문해보세요.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>contact@cleanengine.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <p><a href="https://github.com/CleanEngine/cleanengine-be" target="_blank">GitHub 저장소</a></p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">이름</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">이메일</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">메시지</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">보내기</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/logo.svg" alt="CleanEngine Logo">
-                    <h3>CleanEngine</h3>
+                    <img src="assets/logo.svg" alt="InvestFuture Logo">
+                    <h3>InvestFuture</h3>
                 </div>
                 <div class="footer-links">
-                    <h4>바로가기</h4>
+                    <h4 data-lang-ko="바로가기" data-lang-en="Quick Links">바로가기</h4>
                     <ul>
-                        <li><a href="#features">주요 기능</a></li>
-                        <li><a href="#how-it-works">이용 방법</a></li>
-                        <li><a href="#about">서비스 소개</a></li>
-                        <li><a href="#contact">문의하기</a></li>
+                        <li><a href="#features" data-lang-ko="주요 기능" data-lang-en="Features">주요 기능</a></li>
+                        <li><a href="#how-it-works" data-lang-ko="이용 방법" data-lang-en="How It Works">이용 방법</a></li>
+                        <li><a href="#about" data-lang-ko="서비스 소개" data-lang-en="About">서비스 소개</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h4>소셜 미디어</h4>
+                    <h4 data-lang-ko="소셜 미디어" data-lang-en="Social Media">소셜 미디어</h4>
                     <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://github.com/CleanEngine/cleanengine-be" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="language-toggle">
+                    <h4 data-lang-ko="언어 선택" data-lang-en="Language">언어 선택</h4>
+                    <div class="language-buttons">
+                        <button id="lang-ko" class="lang-btn active" data-lang="ko">한국어</button>
+                        <button id="lang-en" class="lang-btn" data-lang="en">English</button>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 CleanEngine. All rights reserved.</p>
+                <p data-lang-ko="&copy; 2025 CleanEngine. All rights reserved." data-lang-en="&copy; 2025 CleanEngine. All rights reserved.">&copy; 2025 CleanEngine. All rights reserved.</p>
             </div>
         </div>
     </footer>

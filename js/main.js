@@ -32,27 +32,53 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Form submission handling
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+    // Language switching functionality
+    const langKoButton = document.getElementById('lang-ko');
+    const langEnButton = document.getElementById('lang-en');
 
-            // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+    // Function to set language
+    function setLanguage(lang) {
+        // Update html lang attribute
+        document.documentElement.setAttribute('lang', lang);
+        document.documentElement.setAttribute('data-language', lang);
 
-            // Here you would typically send the data to a server
-            // For now, we'll just log it and show a success message
-            console.log('Form submitted:', { name, email, message });
-
-            // Show success message
-            alert('감사합니다! 메시지가 성공적으로 전송되었습니다.');
-
-            // Reset form
-            contactForm.reset();
+        // Update all elements with data-lang-* attributes
+        document.querySelectorAll('[data-lang-ko], [data-lang-en]').forEach(element => {
+            const langAttr = `data-lang-${lang}`;
+            if (element.hasAttribute(langAttr)) {
+                const translation = element.getAttribute(langAttr);
+                // For inputs, set value; for others, set innerHTML
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.value = translation;
+                } else {
+                    element.innerHTML = translation;
+                }
+            }
         });
+
+        // Update active class on language buttons
+        langKoButton.classList.toggle('active', lang === 'ko');
+        langEnButton.classList.toggle('active', lang === 'en');
+
+        // Store language preference in localStorage
+        localStorage.setItem('language', lang);
+    }
+
+    // Add event listeners to language buttons
+    if (langKoButton && langEnButton) {
+        langKoButton.addEventListener('click', function() {
+            setLanguage('ko');
+        });
+
+        langEnButton.addEventListener('click', function() {
+            setLanguage('en');
+        });
+
+        // Check for stored language preference
+        const storedLanguage = localStorage.getItem('language');
+        if (storedLanguage) {
+            setLanguage(storedLanguage);
+        }
     }
 
     // Mobile menu toggle (for responsive design)
